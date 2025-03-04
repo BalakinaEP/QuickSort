@@ -54,8 +54,6 @@ std::vector<int> quickSort(std::vector<int>& arr,
     else if (nLeft == 1)
     {
         result.push_back(leftArr[nLeft - 1]);
-        
-        
     }
     result.push_back(refEl);
     if (nRight > 1)
@@ -64,11 +62,8 @@ std::vector<int> quickSort(std::vector<int>& arr,
     }
     else if (nRight == 1)
     {
-
         result.push_back(rightArr[nRight - 1]);
-        
     }
-    
     return result;
 }
 
