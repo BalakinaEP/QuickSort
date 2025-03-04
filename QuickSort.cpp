@@ -2,8 +2,8 @@
 #include <vector>
 
 std::vector<int> quickSort(std::vector<int>& arr, 
-        const int n, std::vector<int>& result);
-void printArr(const std::vector<int> arr, const int n);
+        const size_t n, std::vector<int>& result);
+void printArr(const std::vector<int> arr, const size_t n);
 std::vector<int> getArray();
 
 int main()
@@ -18,7 +18,7 @@ int main()
 }
 
 std::vector<int> quickSort(std::vector<int>& arr,
-    const int n, std::vector<int>& result)
+    const size_t n, std::vector<int>& result)
 {
     int refElIndex = (n - 1) / 2;
     int refEl = arr[refElIndex];
@@ -72,7 +72,7 @@ std::vector<int> quickSort(std::vector<int>& arr,
     return result;
 }
 
-void printArr(const std::vector<int> arr, const int n)
+void printArr(const std::vector<int> arr, const size_t n)
 {
     for (size_t i = 0; i < n; i++)
     {
